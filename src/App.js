@@ -9,6 +9,7 @@ import {
 import { Navbar } from './app/Navbar'
 
 import { PostsList } from '../../redux-essentials-app/src/features/posts/PostsList'
+import { AddPostForm } from '../../redux-essentials-app/src/features/posts/AddPostForm'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             path="/"
             render={() => (
               <React.Fragment>
+                <AddPostForm />
                 <PostsList />
               </React.Fragment>
             )}
